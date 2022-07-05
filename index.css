@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Lato', sans-serif;
+    outline: none !important;
+}
+
+.form-control:focus {
+    color: none !important;
+    background-color: #fff;
+    border-color: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.form-check-input:focus {
+    border-color: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+
+}
+
+.form-check-input {
+    width: 1.2rem !important;
+    height: 1.2em !important;
+}
+
+body {
+    background-color: #f2f1ff;
+}
+
+:root {
+    --blue: #473e9e;
+    --light-blue: #3291e9;
+    --white: #fff;
+    --black: #000;
+    --nav-link: #3a3a3a;
+    --purple: #918bc5;
+    --purple-opacity-30: rgba(145, 139, 197, 0.3);
+    --purple-opacity-20: rgba(145, 139, 197, 0.2);
+    --light-purple: #bcbfd8;
+    --red: #ee2654;
+    --pink: #ff819e;
+    --yellow: #fab011;
+    --grey: #e7e5f4;
+    --grey-2: #e4e3f7;
+    --grey-3: #faf9ff;
+    --f400-lato: 'Lato-Regular';
+    --f500-lato: 'Lato-Medium';
+    --f600-lato: 'Lato-Semibold';
+    --f700-lato: 'Lato-Bold';
+    --f800-lato: 'Lato-Heavy';
+    --f900-lato: 'Lato-Black';
+    --main-input-bg: #f2f1ff;
+    --btn-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+    --bg-other-main: #f2f1ff;
+    --reason-input-bg: #fff;
+    --reason-input-border: #e7e5f4;
+    --reason-input-circle: #dad8ec;
+    --loading-bg: #edecff;
+    --bg-item: #f3f2ff;
+}
+
+.main-container {
+    width: 65%;
+}
+
+
+/*Scrollbar Style */
+.main::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    /* background-color: #F5F5F5; */
+    border-radius: 10px;
+}
+
+.main::-webkit-scrollbar {
+    width: 5px;
+    /* background-color: #F5F5F5; */
+}
+
+.main::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            color-stop(0.44, var(--blue)),
+            color-stop(0.72, var(--blue)),
+            color-stop(0.86, var(--blue)));
+}
+
+
+.primary-text-color {
+    color: var(--blue);
+}
+
+.heading-primary-text-color {
+    color: var(--light-blue);
+}
+
+.white-text {
+    color: var(--white);
+}
+
+.secondary-text-color {
+    color: var(--purple);
+}
+
+.secondary-bg {
+    background-color: var(--bg-other-main)
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.block-2-para {
+    font-size: 15px
+}
+
+.select-box {
+    width: 221px;
+    height: 41px;
+    border-radius: 3px;
+    border: 2px solid #E4E3F7;
+
+
+}
+
+.save-btn {
+    width: 157px;
+}
+
+/* select.select-box {
+    border: 1px solid #ccc;
+
+    background-color: #ccc;
+}
+
+select.select-box {
+    background-size: 16px;
+    background-position: calc(100% - 20px) 17px;
+    background-repeat: no-repeat;
+} */
+
+/* navigation */
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--light-blue) !important;
+    background-color: transparent !important;
+    border-bottom: 3px solid var(--light-blue) !important;
+    border-radius: 0 !important;
+    font-weight: 700;
+}
+
+.nav-pills .nav-link {
+    color: var(--blue) !important;
+    background: 0 0;
+    border: 0;
+    border-radius: .25rem;
+    font-weight: 600 !important;
+}
+
+.tab-content-heading {
+    font-size: 18px;
+}
+
+.input-boxes-heading {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--blue) !important;
+}
+
+.input-boxes {
+
+    padding: 5px 10px;
+    width: 270px;
+    border: 2px solid #E4E3F7;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 400;
+    color: var(--purple) !important;
+}
+
+.input-boxes::placeholder {
+    color: var(--purple) !important;
+}
+
+.back-btn {
+    box-sizing: border-box;
+
+
+    width: 217px;
+    height: 40px;
+
+    background: none;
+    border: 1px solid var(--light-blue);
+    border-radius: 3px;
+    color: var(--light-blue) !important;
+    font-weight: 600;
+    size: 14px;
+}
+
+.preview-btn {
+
+    width: 217px;
+    height: 40px;
+    font-weight: 600;
+    size: 14px;
+
+    background: var(--light-blue);
+    border-radius: 3px;
+}
+
+.preview-btn:hover {
+    color: white;
+}
+
+.navigation-main {
+    height: 70vh;
+}
+
+.default-btn {
+
+    width: 217px;
+    height: 40px;
+
+    font-weight: 600;
+    size: 14px;
+    background: var(--blue);
+    border-radius: 3px;
+}
+
+.heading {
+    font-size: 26px;
+}
+
+.heading-sub-text {
+    font-size: 14px;
+}
+
+.branding {
+    font-size: 26px
+}
+
+/* Remove arrow icon from input type number */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

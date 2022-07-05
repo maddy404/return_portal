@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Return Portal</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
+          rel="stylesheet"
+        />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link href="index.css" rel="stylesheet" type="text/css" />
+    
+
+        
+    </head>
+    <body>
+        <!-- Main Div-->
+        <div class="container main-container  d-flex flex-column">
+            <!--Outer Div-->
+            
+          <div class="d-flex flex-column w-100 mt-3">
+            <!--Block-1-->
+            <div class="d-flex w-100 justify-content-between align-items-center   secondary-bg">
+                <div class="d-flex w-25 ">
+                    <span class="primary-text-color fw-700 branding">Branding</span>
+                </div>
+                <div class="d-flex w-75 justify-content-between ">
+                    <select class="select-box p-2 rounded-3">
+                       <option value="1">Primary Color</option>
+                    </select>
+                    <select class="select-box p-2 rounded-3">
+                        <option value="1">Font</option>
+                     </select>
+                    <div>
+                        <button type="button" class="btn btn-primary px-5 save-btn">Save</button>
+                    </div>
+                </div>
+            </div>
+            <!--Block-2-->
+              <!--Navigation/Tabs-->
+              <div  class=" bg-white rounded-3 p-1 mt-3 navigation-main">
+                <ul class="nav nav-pills primary-text-color   bg-white border-primary border-bottom w-100" id="pills-tab " role="tablist">
+                    <li class="nav-item " role="presentation">
+                      <button class="nav-link active " id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#search-order" type="button" role="tab" aria-controls="search-order" aria-selected="true">Search Order</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#return-exchange" type="button" role="tab" aria-controls="return-exchange" aria-selected="false">Return & Exchanges</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#address" type="button" role="tab" aria-controls="address" aria-selected="false">Address</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#return-exchange-history" type="button" role="tab" aria-controls="return-exchange-history" aria-selected="false">Return/Exchanges History</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#tracking-package" type="button" role="tab" aria-controls="tracking-package" aria-selected="false">Tracking page</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#error-msg" type="button" role="tab" aria-controls="error-msg" aria-selected="false">Error Message</button>
+                    </li>
+                </ul>
+                <div class="d-flex w-100 fw-700 justify-content-center align-items-center mt-3  heading-primary-text-color tab-content-heading">
+                    Enter the exact message you would like to show your customer
+                </div>
+                <div class="tab-content bg-white w-75 mt-3" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="search-order" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="d-flex flex-column w-100 p-3 ">
+                           <div class="d-flex w-100">
+                                <div class="d-flex flex-column px-2">
+                                    <div class="d-flex input-boxes-heading">
+                                        Return & Exchanges
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <input type="text" class="input-boxes" placeholder="Return & Exchanges" />
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column px-2">
+                                    <div class="d-flex input-boxes-heading">
+                                        Enter your order Number or Email
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <input type="text" class="input-boxes" placeholder="Enter your order Number or Email" />
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <div class="d-flex input-boxes-heading">
+                                        Order Number
+                                    </div>
+                                    <div class="d-flex mt-2">
+                                        <input type="text" class="input-boxes" placeholder="Order Number" />
+                                    </div>
+                                </div>
+                           </div>
+                           <div class="d-flex w-100 mt-4">
+                            <div class="d-flex flex-column px-2">
+                                <div class="d-flex input-boxes-heading">
+                                    Email or phone number
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <input type="text" class="input-boxes" placeholder="Email or phone number" />
+                                </div>
+                            </div>
+                            <div class="d-flex flex-column px-2">
+                                <div class="d-flex input-boxes-heading">
+                                    Find your order button
+                                </div>
+                                <div class="d-flex mt-2">
+                                    <input type="text" class="input-boxes" placeholder="Find your order button" />
+                                </div>
+                            </div>
+                           
+                           
+                       </div>
+                           
+                        </div>
+    
+                    </div>
+                    <div class="tab-pane fade" id="return-exchange" role="tabpanel" aria-labelledby="pills-contact-tab">
+                        <div class="d-flex flex-column w-100 p-3 ">
+                            Tab2
+                            
+                         </div>
+                    </div>
+                    <div class="tab-pane fade" id="address" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="d-flex flex-column w-100 p-3 ">
+                            Tab3
+                            
+                         </div>
+                    </div>
+                    <div class="tab-pane fade" id="return-exchange-history" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="d-flex flex-column w-100 p-3 ">
+                            Tab4
+                            
+                         </div>
+                    </div>
+                    <div class="tab-pane fade" id="tracking-package" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="d-flex flex-column w-100 p-3 ">
+                            Tab5
+                            
+                         </div>
+                    </div>
+                    <div class="tab-pane fade" id="error-msg" role="tabpanel" aria-labelledby="pills-profile-tab">
+                        <div class="d-flex flex-column w-100 p-3 ">
+                            Tab6
+                            
+                         </div>
+                    </div>
+                </div>
+              </div>
+           
+            <!--Block-3-->  
+            <div class="d-flex w-100 mt-3 justify-content-between">
+                <div>
+                    <button type="button" class="btn btn-primary px-5 back-btn">Back</button>
+                </div>
+                <div>
+                    <button type="button" class="btn btn-primary px-5 preview-btn mr-4">Preview</button>
+                    <button type="button" class="btn btn-primary px-5 default-btn">Reset to default</button>
+                </div>
+            </div>
+          </div>
+           
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+       
+    </body>
+</html>
